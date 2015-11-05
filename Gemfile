@@ -53,4 +53,3 @@ end
 
 gem 'solidus'
 gem "solidus_auth_devise"
-gem "solidus_frontend"
