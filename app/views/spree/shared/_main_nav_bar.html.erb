@@ -1,12 +1,33 @@
 
 <nav class="col-md-12">
   <div id="main-nav-bar" class="navbar-fixed-top">
-    <ul class="nav navbar-nav" data-hook>
-      <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
 
-      <li id="home-link" data-hook><%= link_to Spree.t(:Products), spree.products_path %></li>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SHOP<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><h4 class="word6">Category</h4></li>
+            <li role="separator" class="divider"></li>
+            <li><h4 class="word6">Movies</h4></li>
+            <li><a href="/t/movies/newrelease"><h4 class="shoplist">New Release</h4></a></li>
+            <li><a href="/t/movies/action&adventure"><h4 class="shoplist"> Action & Adventure </h4></a></li>
+            <li><a href="/t/movies/scifi&fantasy"><h4 class="shoplist">Sci-Fi & Fantasy</h4></a></li>
+            <li><a href="/t/movies/comedy"><h4 class="shoplist">Comedy</h4></a></li>
+            <li><a href="/t/movies/family"><h4 class="shoplist">Family</h4></a></li>
+            <li><a href="/t/movies/children"><h4 class="shoplist">Children </h4></a></li>
+            <li><a href="/t/movies/horror"><h4 class="shoplist">Horror</h4></a></li>
+            <li><a href="/t/movies/classic"><h4 class="shoplist"> Classic</h4></a></li>
+            <li><a href="/t/movies/anime-and-animation"><h4 class="shoplist">Anime & Animation</h4></a></li>
+            <li><a href="/t/movies/romance"><h4 class="shoplist">Romance</h4></a></li>
+            <li><a href="/t/movies/drama"><h4 class="shoplist">Drama</h4></a></li>
+            <li><a href="/t/movies/mystery-and-suspense"><h4 class="shoplist">Mystery & Suspense </h4></a></li>
+          </ul>
+        </li>
+      </ul>
+    <ul class="nav navbar-nav" data-hook>
+      <li class="nav navbar-nav justified" data-hook><%= link_to Spree.t(:MICHEALS_COLLECTION), spree.root_path %></li>
     </ul>
-    
 
     <ul class="nav navbar-nav navbar-right" data-hook>
       <li id="link-to-cart" data-hook>
@@ -18,5 +39,11 @@
       </li>
       <script>Spree.fetch_cart()</script>
     </ul>
+        </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
   </div>
 </nav>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+  

@@ -21,7 +21,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-
+#bs-example-navbar-collapse-1{
+  background-color: bluse;
+}
 .container-fluid{
   padding-bottom: 50px;
   margin-left:-10px;
@@ -29,7 +31,11 @@ body {
 
 }
 
+.shoplist{
+  font-size: 12px;
+  text-align: center;
 
+}
 
 #main{
   background-size: 400px;
@@ -59,8 +65,17 @@ body {
   height: 300px;
   text-align: center;
   color: #d5641c;
-
 }
+#third {
+  background-image: url("http://images5.aplus.com/uc-up/807525ba-92ef-4f44-9108-243b36fe75c5/807525ba-92ef-4f44-9108-243b36fe75c5.quality_lighter.inline_yes.jpg");
+  background-size: 1300px;
+  background-color: #F5F5F1;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  }
+
+
 .word{
   text-shadow: 4px 4px black;
   float: right;
@@ -71,6 +86,47 @@ body {
   font-weight: 400;
   color: #D6CE17;
 }
+.word1{
+  border: 3px white solid;
+  border-style: outset;
+  float: left;
+  text-align: center;
+  margin-top: 400px;
+  padding: 5px 10px;
+  position:absolute;
+  left:650%;
+  a{
+  color: white;
+  }
+}
+.word5{
+  border: 3px white solid;
+  border-style: outset;
+  padding: 5px 10px;
+  font-family: 'Playfair Display', serif;
+  color: #d5641c;
+  margin-top: 20px;
+  font-size: 20px;
+  position:absolute;
+  left: 40%;
+   a{
+  color: white;
+  }
+}
+
+.word3{
+  text-shadow: 4px 4px black;
+  float: right;
+  font-size: 50px;
+  padding-top: 200px;
+  margin-top: 130px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 450;
+  color: white;
+  margin-bottom: 100px;
+  position:absolute;
+  right: 25%;
+}
 .word img{
   padding-top: 20px;
 }
@@ -80,6 +136,12 @@ body {
   font-size: 20px;
 }
 
+.word6{
+  font-family: 'Playfair Display', serif;
+  color: #d5641c;
+  font-size: 16px;
+  text-align: center;
+}
 
 /* Line style */
 hr {
@@ -337,7 +399,11 @@ table {
 /*--------------------------------------*/
 /* Navigation
 /*--------------------------------------*/
-
+.justified {
+    position:absolute;
+    left:250%;
+    background: images-url("images/unnamed.png");
+}
 nav#top-nav-bar {
   text-align: right;
   margin-top: 20px;
@@ -351,7 +417,9 @@ nav#top-nav-bar {
         font-weight: bold;
         font-size: $header_navigation_font_size;
         text-transform: uppercase;
+        font-size: 25px;
       }
+
     }
   }
 }
@@ -359,7 +427,7 @@ nav#top-nav-bar {
 nav #main-nav-bar {
   text-transform: uppercase;
   font-weight: bold;
-
+  background-color: white;
   padding: 3px;
 
   li {
