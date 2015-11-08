@@ -20,45 +20,40 @@ body {
   background-color: $layout_background_color;
   -webkit-font-smoothing: antialiased;
 }
-
-#bs-example-navbar-collapse-1{
-  background-color: bluse;
-}
 .container-fluid{
   padding-bottom: 50px;
-  margin-left:-10px;
-  margin-right:-10px;
-
+  #fun{
+  text-align: center;
 }
-
+}
+#carousel-example-generic{
+  margin-bottom: 50px;
+}
 .shoplist{
   font-size: 12px;
   text-align: center;
 
 }
-
-#main{
-  background-size: 400px;
-  padding-top: 40px;
+#fun{
+  text-align:center;
 }
-.carousel-caption{
- background-image: url("http://www.clipartbest.com/cliparts/RcA/AKL/RcAAKLpcL.jpeg");
-  background-repeat: no-repeat;
-  background-size: 400px;
-  
+.carousel-inner{
+  height: 500px;
+  text-align: center;
+  img{
+    width:cover;
+    height: 600px;
+  }
 }
-#first {
-  background-image: url("http://www.flickeringmyth.com/wp-content/uploads/2015/06/3039097-inline-i-2-jurassic-world.jpg");
-  background-size: 1400px;
-  background-color: #F5F5F1;
-  background-repeat: no-repeat;
-  width: 100%;
+.item{
+  background: url("http://www.trbimg.com/img-546fd0a9/turbine/dp-fea-dp-the-list-thanksgiving-movies-1128-20141127");
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;   
   height: 600px;
+  text-align: center;
+}
 
-}
-#first img{
-  float: right;
-}
 #second{
   background-image: white;
   background-repeat: no-repeat;
@@ -67,24 +62,21 @@ body {
   color: #d5641c;
 }
 #third {
-  background-image: url("http://images5.aplus.com/uc-up/807525ba-92ef-4f44-9108-243b36fe75c5/807525ba-92ef-4f44-9108-243b36fe75c5.quality_lighter.inline_yes.jpg");
-  background-size: 1300px;
-  background-color: #F5F5F1;
+  background: url("http://images5.aplus.com/uc-up/807525ba-92ef-4f44-9108-243b36fe75c5/807525ba-92ef-4f44-9108-243b36fe75c5.quality_lighter.inline_yes.jpg");
   background-repeat: no-repeat;
-  width: 100%;
+  background: cover;
   height: 600px;
   }
 
 
 .word{
-  text-shadow: 4px 4px black;
-  float: right;
+  text-align: center;
   font-size: 50px;
-  padding-top: 100px;
+  padding-top: 300px;
   margin-top: 50px;
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  color: #D6CE17;
+  color: white;
 }
 .word1{
   border: 3px white solid;
@@ -99,33 +91,28 @@ body {
   color: white;
   }
 }
-.word5{
-  border: 3px white solid;
-  border-style: outset;
+.carousel-caption{
+
+  text-align:center;
   padding: 5px 10px;
   font-family: 'Playfair Display', serif;
-  color: #d5641c;
+  color: white;
   margin-top: 20px;
   font-size: 20px;
-  position:absolute;
-  left: 40%;
    a{
   color: white;
   }
 }
 
-.word3{
-  text-shadow: 4px 4px black;
-  float: right;
+.carousel-caption2{
+  text-align:center;
   font-size: 50px;
-  padding-top: 200px;
-  margin-top: 130px;
   font-family: 'Playfair Display', serif;
   font-weight: 450;
   color: white;
   margin-bottom: 100px;
-  position:absolute;
-  right: 25%;
+  padding-top: 200px;
+
 }
 .word img{
   padding-top: 20px;
@@ -399,11 +386,7 @@ table {
 /*--------------------------------------*/
 /* Navigation
 /*--------------------------------------*/
-.justified {
-    position:absolute;
-    left:250%;
-    background: images-url("images/unnamed.png");
-}
+
 nav#top-nav-bar {
   text-align: right;
   margin-top: 20px;
@@ -424,12 +407,17 @@ nav#top-nav-bar {
   }
 }
 
+.navbar-right{
+  padding-right: 10px;
+}
+nav #fun{
+  text-align:center;
+}
 nav #main-nav-bar {
   text-transform: uppercase;
   font-weight: bold;
   background-color: white;
   padding: 3px;
-
   li {
 
     a {
@@ -441,6 +429,13 @@ nav #main-nav-bar {
       a {
         padding-left: 0
       }
+    }
+
+    &#fun{
+    text-align: center;
+    }
+    #cart{
+    float: right;
     }
 
     &#link-to-cart {

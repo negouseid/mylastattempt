@@ -1,7 +1,7 @@
 
-<nav class="col-md-12">
+<nav class="container-fluid">
   <div id="main-nav-bar" class="navbar-fixed-top">
-
+    <div class="col-md-4">
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="dropdown">
@@ -25,25 +25,35 @@
           </ul>
         </li>
       </ul>
-    <ul class="nav navbar-nav" data-hook>
-      <li class="nav navbar-nav justified" data-hook><%= link_to Spree.t(:MICHEALS_COLLECTION), spree.root_path %></li>
-    </ul>
-
-    <ul class="nav navbar-nav navbar-right" data-hook>
-      <li id="link-to-cart" data-hook>
-        <%= render 'spree/shared/login_bar' %>
-        <noscript>
-          <%= link_to Spree.t(:cart), '/cart' %>
-        </noscript>
-        &nbsp;
-      </li>
-      <script>Spree.fetch_cart()</script>
-    </ul>
-        </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
   </div>
+
+    <div class="col-md-4" id="fun" >
+      <ul class="nav navbar-nav"  data-hook>
+        <li class="nav navbar-nav" data-hook><%= link_to Spree.t(:SKYOMIKES), spree.root_path %></li>
+      </ul>
+    </div>
+
+    <div id="main-nav-bar" class="col-md-4">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="https://localwiki.org/ftl/shopping/_files/shopping-cart.png" width="40px" height="30px"><span class="caret" id="cart"></span></a>
+            <ul class="dropdown-menu">
+            <li id="link-to-cart" data-hook>
+              <%= render 'spree/shared/login_bar' %>
+              <noscript>
+                <%= link_to Spree.t(:cart), '/cart' %>
+              </noscript>
+              &nbsp;
+            </li>
+            <script>Spree.fetch_cart()</script>
+        </ul>
+        </li>
+      </ul>
+    </div>
+ </div><!-- /.navbar-collapse -->
+<!-- /.container-fluid -->
 </nav>
 
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
   

@@ -1,13 +1,38 @@
-	<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12" id="first">
-			<img src="http://ultraimg.com/images/XCV3R48db7.png" width="350px" height="450px">
-			<h1 class="word"> Get The Newest Release Today<br>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-			<small class="word5" data-hook><%= link_to Spree.t(:shop), spree.products_path %></small> </h1>
-		</div>
-	</div>
-	</div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://img02.deviantart.net/92ed/i/2015/176/9/d/inside_out_fan_movie_poster_by_an_christiancomics-d8yq41c.jpg" alt="...">
+      <div class="carousel-caption">
+        <small class="word5" data-hook><%= link_to Spree.t(:shop), spree.products_path %></small>
+      </div>
+    </div>
+    <div class="item">
+      <div class="carousel-caption2">
+        <p>The Whole Gang is Here for the Holiday!</p>
+      </div>
+    </div>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
 
 	<div class="container">
 	<div class="row">
@@ -66,16 +91,5 @@
 		</div>
 	</div>
 </div>
-
-	<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12" id="third">
-			<h1 class="word3"> The Gang is all Here!</h1>
-			<div class="col-md-1">
-			<h2 class="word1" data-hook><%= link_to Spree.t(:shop), spree.products_path %></h2> 
-			</div>
-		</div>
-	</div>
-	</div>
 
 
