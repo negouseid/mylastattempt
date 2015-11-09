@@ -6,7 +6,6 @@ ruby '2.2.3'
 gem 'rails', '4.2.4'
 # Use postgresql as the database for Active Record
 gem 'pg'
-gem "figaro"
 gem 'aws-sdk', '~> 2.1', '>= 2.1.31'
 gem 'paperclip'
 # Use SCSS for stylesheets
@@ -16,7 +15,6 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 gem 'bootstrap-sass', '~> 3.3.5'
-gem 'aws-sdk', '~> 2.1', '>= 2.1.31'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
