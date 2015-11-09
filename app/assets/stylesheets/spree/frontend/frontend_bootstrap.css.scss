@@ -22,13 +22,13 @@ body {
 }
 #fun{
   text-align:center;
-  font-size: 50px;
+  font-size: 70px;
   color: #C9A67A;
-  text-shadow: 5px outset #CD9A5A;
+  text-outline: 2px 2px #CD9A5A;;
   a{
   font-size: 50px;
   color: #C9A67A;
-  text-shadow: 5px outset #CD9A5A;
+  text-shadow: 5px #CD9A5A;
   }
 }
 .banner_holder{
@@ -63,8 +63,10 @@ body {
   text-align: center;
 
 }
-
 .carousel-inner{
+  background: black;
+}
+.item{
     background: url("http://www.ubabags.com/skin/frontend/argento/argento/images/xmas-background.jpg");
   position:relative;
   background-size: cover;
@@ -108,8 +110,9 @@ body {
   border: solid 5px white;
   background: black;
   text-align: center;
-    color: white;
+  color: white;
   height: 350px;
+  margin-bottom: 100px;
   p{font-size: 50px;
     padding-top: 20px;
   }
@@ -128,6 +131,7 @@ body {
   text-align: center;
   color: white;
   height: 350px;
+  margin-bottom: 100px;
   p{font-size: 50px;
     padding-top: 20px;
   }
