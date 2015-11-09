@@ -20,11 +20,29 @@ body {
   background-color: $layout_background_color;
   -webkit-font-smoothing: antialiased;
 }
+.banner_holder{
+    width: 100%;
+    height: 900px;
+    min-height: 200px;
+    position: relative;
+    outline:1px dotted red;
+}
+
+.banner_holderImage{
+    height: 100%;
+    position:relative;
+    background-size: cover;
+    background-image: url("http://orig08.deviantart.net/2315/f/2011/035/6/4/imdb_top_250_movie_poster_by_saxon1964-d38rnod.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
 .container-fluid{
   padding-bottom: 50px;
-  #fun{
-  text-align: center;
-}
 }
 #carousel-example-generic{
   margin-bottom: 50px;
@@ -34,24 +52,30 @@ body {
   text-align: center;
 
 }
-#fun{
-  text-align:center;
-}
+
 .carousel-inner{
-  height: 500px;
+    background: url("http://www.freelargeimages.com/wp-content/uploads/2014/12/Christmas_background-9.png");
+  position:relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   text-align: center;
-  img{
-    width:cover;
-    height: 600px;
+  height: 700px;
+  text-align: center;
+  p{
+  padding-bottom: 20px;
   }
-}
-.item{
-  background: url("http://www.trbimg.com/img-546fd0a9/turbine/dp-fea-dp-the-list-thanksgiving-movies-1128-20141127");
-  background-size:     cover;                      /* <------ */
-  background-repeat:   no-repeat;
-  background-position: center center;   
-  height: 800px;
-  text-align: center;
+  a{
+    margin-top: 20px;
+  }
+  img{
+    width: cover;
+    height: 200px;
+
+  }
 }
 
 #second{
@@ -106,9 +130,9 @@ body {
 
 .carousel-caption2{
   text-align:center;
-  font-size: 50px;
+  font-size: 90px;
   font-family: 'Playfair Display', serif;
-  font-weight: 450;
+  font-weight: 650;
   color: white;
   margin-bottom: 100px;
   padding-top: 200px;
