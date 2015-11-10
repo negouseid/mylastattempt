@@ -6,7 +6,7 @@ ruby '2.2.3'
 gem 'rails', '4.2.4'
 # Use postgresql as the database for Active Record
 gem 'pg'
-gem 'aws-sdk', '~> 2.1', '>= 2.1.31'
+gem 'aws-sdk'
 gem 'paperclip'
 gem "figaro"
 # Use SCSS for stylesheets
