@@ -8,6 +8,7 @@ gem 'rails', '4.2.4'
 gem 'pg'
 gem 'aws-sdk', '~> 2.1', '>= 2.1.31'
 gem 'paperclip'
+gem "figaro"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
