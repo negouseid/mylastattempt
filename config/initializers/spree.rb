@@ -48,7 +48,6 @@ Spree.config do |config|
   #   server: Rails.env.production? ? 'production' : 'test',
   #   test: !Rails.env.production?
   # )
-if Rails.env.production? then
    attachment_config = {
 
    s3_credentials: {
@@ -78,7 +77,6 @@ if Rails.env.production? then
  attachment_config.each do |key, value|
    Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
  end
-end
 end
 
 Spree.user_class = "Spree::LegacyUser"
