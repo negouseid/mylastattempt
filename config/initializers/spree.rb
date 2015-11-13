@@ -48,10 +48,6 @@ Spree.config do |config|
   #   server: Rails.env.production? ? 'production' : 'test',
   #   test: !Rails.env.production?
   # )
-
-
 end
 
 Spree.user_class = "Spree::LegacyUser"
-
-
